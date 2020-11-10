@@ -4,16 +4,21 @@
 	 * 2); = > HiHi stringTimes("Hi", 3); = > HiHiHi stringTimes("Hi", 1); = > Hi
 	 */
 
-
-		String str = "";
-
-		for (int i = 0; i < number; i++) {
-
-			str = str + string; 
-								
-		}
-		System.out.print(str);
-
+		Scanner sc= new Scanner (System.in);
+		System.out.println("Enter a number");
+		int num = sc.nextInt();
+		
+		
+	
+		stringTimes("Hi", num);
+	
 	}
 
+	public static void stringTimes(String word, int num) {
+		for(int i=1;i<=num;i++) {
+			
+			System.out.print("Hi");
+		}
+		
+	}
 }
