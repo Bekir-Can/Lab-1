@@ -2,21 +2,41 @@
 		 * prints true if either one is 6. Or if their sum or difference is 6.
 		 */
 
-			love6(6, 4);
-			love6(4, 5);
-			love6(1, 5);
-			love6(12, 6);
+import java.util.Scanner;
 
-		}
+public class Assignment_5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter first number");
+		int num1 = sc.nextInt();
+		System.out.println("Enter second number");
+		int num2 = sc.nextInt();
 		
-		public static void love6(int num1,int num2) {
-			
-			if(num1==6 || num2==6 || num1+num2==6 || num1-num2==6 || num2-num1==6) {
-				System.out.println(true);
-			}else {
-				System.out.println(false);
-			}
-			
-		}
-
+		love6(num1,num2);
+		
 	}
+
+	public static void love6(int num1,int num2) {
+
+		
+			if(num1+num2==6) {
+				
+				System.out.println("True");
+				
+			}else if(num1-num2==6) {
+				System.out.println("True");
+				
+			}else if(num1==6|| num2==6) {
+				
+				System.out.println("True");
+			}else if(num2-num1==6) {
+				
+				System.out.println("True");
+				
+			}else {
+				System.out.println("False");
+			}
+	}
+
+}
